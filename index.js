@@ -2,7 +2,7 @@ var katzDeliLine = [];
 
 function takeANumber (katzDeliLine, name){
   katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${ katzDeliLine.length} in line.`;
+  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
 }
 
 
@@ -16,14 +16,14 @@ function nowServing (katzDeliLine){
 
 function currentLine (katzDeliLine){
 
-var katzDeliLinePeople = [];
+  var katzDeliLinePeople = [];
 
-for (var i=0; i<katzDeliLine.length; i++){
+  for (var i=0; i<katzDeliLine.length; i++){
       katzDeliLinePeople.push(`${i+1}. ${katzDeliLine[i]}`);}
-  if (katzDeliLine.length>0){
+    if (katzDeliLine.length>0){
         return `The line is currently: ${katzDeliLinePeople.join(', ')}`;
   }
-  else{
-    return 'The line is currently empty.';
+    else{
+  return 'The line is currently empty.';
   }
 } 
